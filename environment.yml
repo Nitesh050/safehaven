@@ -1,0 +1,21 @@
+# Offline pipeline + local dev. Create with: conda env create -f environment.yml
+name: safehaven
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - geopandas
+  - osmnx
+  - rasterio
+  - pysheds
+  - shapely
+  - networkx
+  - numpy
+  - scipy
+  - xarray
+  - netcdf4
+  - requests
+  - pip
+  - pip:
+      - -r requirements.txt
+      - -r requirements-dev.txt
